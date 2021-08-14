@@ -1,0 +1,9 @@
+id,class,image,filename
+1,Warrior,warrior.png,warrior
+2,Mage,mage.png,mage
+3,Cleric,cleric.png,cleric
+4,Ranger,ranger.png,ranger
+5,Rogue,rogue.png,rogue
+6,Brute,brute.png,brute
+7,Trader,trader.png,trader
+8,Manufacturer,manufacturer.png,manufacturer

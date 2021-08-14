@@ -1,0 +1,30 @@
+Upgrade ID,Upgrade Name,Flavour Text,Generator Target ID,Modifier,Cost
+1,Add Catalyst,with just a pinch the spell lasts longer,1,2.5,50
+2,Technique I,wiggle that finger,1,2.5,100
+3,Nimble Fingers,better hand placement gives better results,2,2.5,200
+4,Wand Casting,what's brown and sticky?,1,2.5,400
+5,Lock Picking I,i ordered the kit online,2,2.5,800
+6,Technique II,flick and swish,1,5,1600
+7,Check for Traps,if I throw dice at it and don't get an arrow to the knee then we are probably good,2,5,3200
+8,Sharper Sword,death by a thousand cuts,3,5,6400
+9,Diamond Tipped,shiny!,1,5,12800
+10,Lock Picking II,just follow this 24 hour course and you too will be able to pick this training lock,2,5,25600
+11,Thrusting I,poke them in the eye,3,5,51200
+12,Technique III,remember to use a sharp twisting motion with your back,1,5,102400
+13,Hidden Compartments,lets just feel about in the bottom for buttons,2,5,204800
+14,Reforged Handle,this feels really grippy,3,5,409600
+15,Haggle Reward,if you want them returned in one piece it'll cost more,4,5,819200
+16,Elvish Steel,lighter sharper and the inscriptions are so pretty!,1,7,1638400
+17,Check for Magical Traps,why does this bit glow?,2,7,3276800
+18,Thrusting II,remember to aim for a spot behind their chest,3,7,6553600
+19,Return in One Piece,see i told you they would come back in 1 piece,4,7,13107200
+20,Technique IV,spam space,1,7,26214400
+21,Appraise Loot I,this is dirty but with a bit of polish we can flog it at the market,2,7,52428800
+22,Dipped in Diamonds,weird how they stick to the blade...,3,7,104857600
+23,Guild Bonus,i was promised a bonus when i signed up,4,7,209715200
+24,Check Pockets,this shirt could use a wash,5,7,419430400
+25,Enchanted I,nothing says stabby like a blue glow,1,10,838860800
+26,Salvage Chest,i reckon the hinges are worth flogging to the blacksmith,2,10,1677721600
+27,Name That Sword,bob the impaler is coming for you,3,10,3355443200
+28,Invoice for Costs,if you look in section c we had to replace a very expensive sword after the first battle,4,10,6710886400
+29,Search Shoes,i don't care how much they smell - theres got to be a few coins in there,5,10,13421772800

@@ -1,0 +1,12 @@
+id,name,amount,cost,image
+1,Dagger,1,50,warrior_1
+2,Loot Basic Chest,2,100,warrior_2
+3,Garotte,4,200,warrior_3
+4,Save NPC,8,400,warrior_4
+5,Loot Monsters,16,800,warrior_5
+6,Sword,32,1600,warrior_6
+7,Loot Large Chest,64,3200,warrior_7
+8,Save Named NPC,128,6400,warrior_8
+9,Detect Traps,256,12800,warrior_9
+10,Loot Epic Chest,512,25600,warrior_10
+11,Poison Dart,1024,51200,warrior_11

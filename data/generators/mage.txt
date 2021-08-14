@@ -1,0 +1,12 @@
+id,name,amount,cost,image
+1,Detect Enemies,1,50,mage_1
+2,Loot Basic Chest,2,100,mage_2
+3,Detect Traps,4,200,mage_3
+4,Save NPC,8,400,mage_4
+5,Loot Monsters,16,800,mage_5
+6,Flame,32,1600,mage_6
+7,Loot Large Chest,64,3200,mage_7
+8,Save Named NPC,128,6400,mage_8
+9,Magic Arrows,256,12800,mage_9
+10,Loot Epic Chest,512,25600,mage_10
+11,Fireball,1024,51200,mage_11

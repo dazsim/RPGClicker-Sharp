@@ -1,0 +1,6 @@
+stat,value
+int,25
+dex,35
+cha,40
+con,45
+str,50

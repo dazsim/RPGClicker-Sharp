@@ -1,0 +1,30 @@
+Upgrade ID,Upgrade Name,Flavour Text,Generator Target ID,Modifier
+1,Sharper Short Sword,that's going to sting,1,2.5
+2,Technique I,raise that elbow,1,2.5
+3,Lucky Fingers,don't fail me now,2,2.5
+4,Reforged Blade,those dwarves really know how to work metal,1,2.5
+5,Lock Picking I,i ordered the kit online,2,2.5
+6,Technique II,don't drop your guard,1,5
+7,Check for Traps,if I throw dice at it and don't get an arrow to the knee then we are probably good,2,5
+8,Sharper Sword,death by a thousand cuts,3,5
+9,Diamond Tipped,shiny!,1,5
+10,Lock Picking II,just follow this 24 hour course and you too will be able to pick this training lock,2,5
+11,Thrusting I,poke them in the eye,3,5
+12,Technique III,remember to use a sharp twisting motion with your back,1,5
+13,Hidden Compartments,lets just feel about in the bottom for buttons,2,5
+14,Reforged Handle,this feels really grippy,3,5
+15,Haggle Reward,if you want them returned in one piece it'll cost more,4,5
+16,Elvish Steel,lighter sharper and the inscriptions are so pretty!,1,7
+17,Check for Magical Traps,why does this bit glow?,2,7
+18,Thrusting II,remember to aim for a spot behind their chest,3,7
+19,Return in One Piece,see i told you they would come back in 1 piece,4,7
+20,Technique IV,spam space,1,7
+21,Appraise Loot I,this is dirty but with a bit of polish we can flog it at the market,2,7
+22,Dipped in Diamonds,weird how they stick to the blade...,3,7
+23,Guild Bonus,i was promised a bonus when i signed up,4,7
+24,Check Pockets,this shirt could use a wash,5,7
+25,Enchanted I,nothing says stabby like a blue glow,1,10
+26,Salvage Chest,i reckon the hinges are worth flogging to the blacksmith,2,10
+27,Name That Sword,bob the impaler is coming for you,3,10
+28,Invoice for Costs,if you look in section c we had to replace a very expensive sword after the first battle,4,10
+29,Search Shoes,i don't care how much they smell - theres got to be a few coins in there,5,10
