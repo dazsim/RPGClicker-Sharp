@@ -10,6 +10,7 @@ using System;
 public class BigInt 
 {
 	public int[] value;
+	public static string[] NumeratorNames = {"Thousand","Million","Billion","Trillion","Quadrillion","Quintillion","Sextillion","Septillion","Octillion","Nonillion","Decillion"};
 
 	public BigInt(int v)
 	{
@@ -71,6 +72,33 @@ public class BigInt
 			a.value[oo] += d;
 		}
 		value[0] = c;
+	}
+	
+	//TODO: make this safe.
+	public static string[] toReadableString(int digits = 3, int fraction = 0, bool hasDelimeter = false)
+	{
+		string v = "";
+		// get string value for number
+		for(var i=value.length;i!=0;i--)
+		{
+			v = v + (string)value[i];
+		}
+		digits = digits - v.length % 3;
+		// index for correct numerator name
+		int p = (v.length - digits) /3;
+		
+		// output string
+		string o = v.Substring(0,digits);
+		//if hasDelimeter is set then we need to add comma's here.
+		if (fraction>0)
+		{
+			o = o + "." + v.SubString(digits,fraction);
+		}
+		//return result.
+		return {o,NumeratorNames[p]};
+		
+		//example. digits == 3, fraction = 3. value[]=1,250,000,000 : result is {"1.250","Billion"}
+		
 	}
 
 }
