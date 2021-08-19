@@ -32,14 +32,14 @@ public class helper : Node2D
 			Upgrades.Add(key,tmp);
 			
 		}
-		foreach (int key in Generators.Keys){
+		/*foreach (int key in Generators.Keys){
 			foreach(int k in Generators[key].Keys){
 				//GD.Print(Generators[key][k]);
 				for(int j = 0;j < Generators[key][k].Length;j++){
-					GD.Print(Generators[key][k][j]);
+					//GD.Print(Generators[key][k][j]);
 				}
 			}
-		}
+		}*/
 	}
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
