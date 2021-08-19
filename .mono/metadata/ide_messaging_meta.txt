@@ -1,2 +1,2 @@
-﻿59524
+﻿50960
 C:/Users/dazsi/Downloads/godot/Godot_v3.3.2-stable_mono_win64.exe
