@@ -22,6 +22,26 @@ public class BigInt
 		value = v.value;
 	}
 	
+	public static boolean operator =(BigInt a, BigInt b)
+	{
+		if (a.value.length == b.value.length)
+		{
+			var result = true;
+			for (var i = 0;i = a.value.length;i++)
+			{
+				if (a.value[i] != b.value[i])
+				{
+					result = false;
+				}
+			}
+			return result;
+		} else
+		{
+			return false;
+		}
+	}
+	
+	
 	public static BigInt operator +(int a, int b)
 	{
 		int c = 0;
@@ -42,40 +62,52 @@ public class BigInt
 		value[0] = c;
 	}
 	
-	public static BigInt operator +(BigInt a, int b)
+	// add integer b to BigInt. If offset is not 0, add integer at value[offset] (helper functionality)
+	public static BigInt operator +(BigInt a, int b, int offset = 0)
 	{
 		int c = 0;
 		int d = 0;
 		int oo = 1;
 		
-		// try adding value[0] to b
+		// try adding value[offset] to b
 		
 		try
 		{
-			c =  checked(a.value[0]+b);
+			c =  checked(a.value[offset]+b);
 		}
 		catch (System.OverflowException e)
 		{
-			c = abs(a.value[0]-b);
+			c = abs(a.value[offset]-b);
 			d = 1;
 		}
 		if (d > 0)
 		{
 			// if it overflows, trigger overflow loop until it doesn't overflow.
 			// while a.value[oo] + d <0
-			while (a.value[oo] + d < 0)
+			while (a.value[oo+offset] + d < 0)
 			{
-				a.value[oo] = 0;
+				a.value[oo+offset] = 0;
 				oo++;
 			}
 			// increment value[oo];
-			a.value[oo] += d;
+			a.value[oo+offset] += d;
 		}
-		value[0] = c;
+		value[offset] = c;
+	}
+	
+	// add 2 BigInt together.
+	public static BigInt operator +(BigInt a, BigInt b)
+	{
+		for (var i=0;i<a.value.length;i++)
+		{
+			// this should work natively using the BigInt/int operator overload
+			b = b+a.value[i];
+		}
+		
 	}
 	
 	//TODO: make this safe.
-	public static string[] toReadableString(int digits = 3, int fraction = 0, bool hasDelimeter = false)
+	public static string[] toReadableString(int digits = 3, int fraction = 0, bool hasDelimeter = false, shortHand = false)
 	{
 		string v = "";
 		// get string value for number
