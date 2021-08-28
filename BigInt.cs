@@ -63,6 +63,8 @@ public class BigInt
 	}
 	
 	// add integer b to BigInt. If offset is not 0, add integer at value[offset] (helper functionality)
+	// TODO: move this functionality into a seperate function that is called by the overload as overload
+	// operators can only take 2 inputs (e.g. c = a + b) and we want to be able to call this to handle BigInt + BigInt
 	public static BigInt operator +(BigInt a, int b, int offset = 0)
 	{
 		int c = 0;
