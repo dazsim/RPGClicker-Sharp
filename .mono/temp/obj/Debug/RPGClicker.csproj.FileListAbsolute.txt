@@ -1,8 +1,0 @@
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\obj\Debug\RPGClicker.csprojAssemblyReference.cache
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\obj\Debug\RPGClicker.AssemblyInfoInputs.cache
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\obj\Debug\RPGClicker.AssemblyInfo.cs
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\obj\Debug\RPGClicker.csproj.CoreCompileInputs.cache
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\bin\Debug\RPGClicker.dll
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\bin\Debug\RPGClicker.pdb
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\obj\Debug\RPGClicker.dll
-C:\Users\dazsi\Documents\Godot\RPGClicker\.mono\temp\obj\Debug\RPGClicker.pdb
