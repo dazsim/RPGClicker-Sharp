@@ -7,6 +7,8 @@ public class NewGameButton : CollisionShape2D
 	// Declare member variables here. Examples:
 	// private int a = 2;
 	// private string b = "text";
+	[Export]
+	public string name = "";
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -25,17 +27,26 @@ public class NewGameButton : CollisionShape2D
 		if (@event is InputEventMouseButton eventMouseButton)
 		{
 			InputEventMouseButton ev = (InputEventMouseButton)@event;
-			if (this != null)
-			{
-				GD.Print(this);
-			}
-			if (ev!=null)
-			{
-				GD.Print(ev.Position);
-			}
-			if (is_point_inside_collision_shape(ev.Position,this))
+			
+			if (is_point_inside_collision_shape(ev.Position,this) && ev.IsPressed())
 			{
 				GD.Print("hello");
+				
+				GD.Print(ev);
+				switch(name){
+					case "NewGame":
+						GD.Print(name);
+						return;
+					case "LoadGame":
+						GD.Print(name);
+						return;
+					case "Settings":
+						GD.Print(name);
+						return;
+					case "Quit":
+						GD.Print(name);
+						return;
+				}
 			}
 		}
 			//GD.Print("Mouse Click/Unclick at: ", eventMouseButton.Position);
@@ -60,12 +71,9 @@ public class NewGameButton : CollisionShape2D
 		
 		//Transform2D t = new Transform2D(0,point + cam.GlobalTransform.origin);
 		Transform2D t = new Transform2D(0,point );
-		CollisionShape2D result = new CollisionShape2D();
-		GD.Print(cs.GlobalTransform);
-		GD.Print(r);
-		GD.Print(t);
+		
 		bool res = false;
-		res = result.Shape.Collide(cs.GlobalTransform, r, t);
+		res = cs.Shape.Collide(cs.GlobalTransform, r, t);
 		return res;
 	}
 }

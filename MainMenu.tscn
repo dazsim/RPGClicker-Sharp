@@ -16,7 +16,26 @@ texture = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="NewGame" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 958.582, 487.148 )
 shape = SubResource( 1 )
 script = ExtResource( 3 )
+name = "NewGame"
+
+[node name="LoadGame" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 958.582, 624.089 )
+shape = SubResource( 1 )
+script = ExtResource( 3 )
+name = "LoadGame"
+
+[node name="Settings" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 960.827, 761.029 )
+shape = SubResource( 1 )
+script = ExtResource( 3 )
+name = "Settings"
+
+[node name="Quit" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 956.337, 900.215 )
+shape = SubResource( 1 )
+script = ExtResource( 3 )
+name = "Quit"
