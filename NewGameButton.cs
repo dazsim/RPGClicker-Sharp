@@ -30,22 +30,25 @@ public class NewGameButton : CollisionShape2D
 			
 			if (is_point_inside_collision_shape(ev.Position,this) && ev.IsPressed())
 			{
-				GD.Print("hello");
 				
-				GD.Print(ev);
-				switch(name){
+				switch(this.name){
 					case "NewGame":
-						GD.Print(name);
+						GD.Print(this.name);
 						return;
 					case "LoadGame":
-						GD.Print(name);
+						GD.Print(this.name);
 						return;
 					case "Settings":
 						GD.Print(name);
 						return;
 					case "Quit":
-						GD.Print(name);
+						GetTree().Quit();
 						return;
+					
+				}
+				if (this.name == "")
+				{
+					GD.Print("Missing name");
 				}
 			}
 		}
