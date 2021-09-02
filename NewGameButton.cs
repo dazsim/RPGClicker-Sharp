@@ -40,9 +40,22 @@ public class NewGameButton : CollisionShape2D
 						return;
 					case "Settings":
 						GD.Print(name);
+						//GetTree().ChangeScene("res://Scenes/Settings.tscn");
+						
+						//PackedScene SettingsResource = (PackedScene)GD.Load("res://Settings.tscn");
+						GetTree().ChangeScene("res://Settings.tscn");
+						
+						
+						//GetTree().Root.CallDeffered("add_child", Settings);
+						QueueFree();
 						return;
 					case "Quit":
 						GetTree().Quit();
+						return;
+					case "Settings-Back":
+						// Settings Menu Back Button
+						GD.Print(name);
+						GetTree().ChangeScene("res://MainMenu.tscn");
 						return;
 					
 				}
