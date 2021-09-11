@@ -9,10 +9,13 @@ extents = Vector2( 121.906, 55.2048 )
 
 [node name="Background" type="Sprite" parent="."]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Node2DBack" type="Node2D" parent="."]
 
-[node name="Back" type="CollisionShape2D" parent="Area2D"]
+[node name="Area2DBack" type="Area2D" parent="Node2DBack"]
+
+[node name="Back" type="CollisionShape2D" parent="Node2DBack/Area2DBack"]
 position = Vector2( 216.435, 154.597 )
 shape = SubResource( 1 )
 script = ExtResource( 1 )
 name = "Settings-Back"
+description = "Back"

@@ -9,10 +9,27 @@ public class NewGameButton : CollisionShape2D
 	// private string b = "text";
 	[Export]
 	public string name = "";
+	[Export]
+	public string description = "";
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		//var dynamic_font = new DynamicFontData();
+		//dynamic_font.Load
+		var font = ResourceLoader.Load("res://Handlee-Regular.ttf");
+		font = (DynamicFontData)font;
+		
+		var label = new RichTextLabel();
+		//label.bbcode_enabled = true
+		label.BbcodeEnabled = true;
+		label.PushColor(new Color(1,0,1,1));
+		label.Set("Handlee-Regular",font);
+		label.Text = description;
+		label.Visible = true;
+		
+		AddChild(label);
+		//GD.Print(label.GetPos());
 		
 	}
 

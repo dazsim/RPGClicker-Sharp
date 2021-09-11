@@ -68,6 +68,9 @@ public class BigInt
 		}
 	}
 	
+	// if (a == b) { // do stuff 
+	// }
+	
 	public static bool operator !=(BigInt a, BigInt b)
 	{
 		return !(a == b);
