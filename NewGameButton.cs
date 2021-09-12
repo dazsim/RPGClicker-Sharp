@@ -19,18 +19,25 @@ public class NewGameButton : CollisionShape2D
 		//dynamic_font.Load
 		var font = ResourceLoader.Load("res://Handlee-Regular.ttf");
 		font = (DynamicFontData)font;
-		
-		var label = new RichTextLabel();
-		//label.bbcode_enabled = true
-		label.BbcodeEnabled = true;
-		label.PushColor(new Color(1,0,1,1));
-		label.Set("Handlee-Regular",font);
-		label.Text = description;
-		label.Visible = true;
-		
-		AddChild(label);
-		//GD.Print(label.GetPos());
-		
+		if (description != "")
+		{
+			GD.Print("add label");
+			var label = new RichTextLabel();
+			//label.bbcode_enabled = true
+			label.BbcodeEnabled = true;
+			label.PushColor(new Color(1,0,1,1));
+			label.Set("Handlee-Regular",font);
+			label.PushColor(new Color((float)1.0,(float)1.0,(float)1.0,(float)1.0));
+			label.AddText(description);
+			
+//			label.Visible = true;
+			
+			GD.Print(description);
+			
+			AddChild(label);
+			GD.Print(label.RectPosition);
+			//GD.Print(label.GetPos());
+		}		
 	}
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
